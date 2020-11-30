@@ -22,7 +22,7 @@ $Comment = $_POST['own'];
     <br>
 <h3>Ваша Фамилия И. О. <?= $UserName ?></h3>
 <p>
-    <?php if (($_FILES['filename']['type'] == 'image/jpeg' or 'image/png' or 'image/gif') && move_uploaded_file($_FILES['filename']['tmp_name'], $Avatar)) {
+    <?php if (($_FILES['filename']['type'] == 'image/jpeg')  && move_uploaded_file($_FILES['filename']['tmp_name'], $Avatar)) {
         echo "<img src='$Avatar' width='250px' alt='Аватар пользователя'><br>";
     }  ?>
 </p>
